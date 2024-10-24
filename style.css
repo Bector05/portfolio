@@ -12,7 +12,7 @@
   }
 
   .sidebar {
-    @apply flex flex-col w-1/5 h-screen bg-zinc-800 rounded-2xl items-center pt-14;
+    @apply flex flex-col w-1/5 h-screen bg-zinc-800 rounded-2xl items-center pt-14 sticky;
   }
 
   .avatar-wrapper {
@@ -35,9 +35,9 @@
     @apply w-full border-t-2 border-zinc-700 mt-4 px-8;
   }
 
-  .contact-info {
-    @apply flex flex-col space-y-4 mt-6 w-full px-8;
-  }
+.contact-info {
+  @apply flex flex-col space-y-10 mt-6 w-full px-8;
+}
 
   .contact-item {
     @apply flex items-center space-x-4;
@@ -59,11 +59,30 @@
     @apply text-zinc-400 text-xs uppercase;
   }
 
-  .contact-details a {
+  .contact-details a,p {
     @apply text-white text-xs no-underline hover:underline;
   }
 
+  .content-box {
+    @apply flex flex-col w-4/5 h-screen bg-zinc-800 rounded-3xl;
+  }
   .content {
-    @apply flex flex-col w-4/5 h-screen bg-zinc-800 rounded-2xl;
+    @apply flex items-center justify-between;
+  }
+  .content-h1 {
+    @apply text-4xl font-bold text-white mt-0 px-8;
+  }
+  .content-nav {
+    @apply flex space-x-8 bg-zinc-700 p-6 mt-0 rounded-tr-3xl rounded-bl-3xl;
+  }
+  .nav-btn-active {
+    @apply text-yellow-400 font-bold text-lg hover:text-yellow-400 focus:outline-none;
+  }
+  .nav-btn {
+    @apply text-zinc-400 font-semibold text-lg focus:outline-none;
+  }
+
+  .nav-btn:hover {
+    @apply text-yellow-400;
   }
 }
