@@ -12,7 +12,7 @@
   }
 
   .sidebar {
-    @apply flex flex-col w-1/5 h-fit bg-zinc-800 rounded-2xl items-center py-14 sticky top-0;
+    @apply flex flex-col w-1/5 h-fit bg-zinc-800 rounded-3xl items-center py-14 sticky top-0;
   }
 
   .avatar-wrapper {
@@ -73,13 +73,13 @@
     @apply text-4xl font-bold text-white mt-0 px-8;
   }
   .content-nav {
-    @apply flex space-x-8 bg-zinc-700 p-6 mt-0 rounded-tr-3xl rounded-bl-3xl;
+    @apply flex space-x-10  gap-4 bg-zinc-700 py-4 px-6 mt-0 rounded-tr-3xl rounded-bl-3xl;
   }
   .nav-btn-active {
-    @apply text-yellow-500 font-bold text-lg hover:text-yellow-500 focus:outline-none;
+    @apply text-yellow-500 font-semibold text-lg hover:text-yellow-500 focus:outline-none;
   }
   .nav-btn {
-    @apply text-zinc-400 font-semibold text-lg focus:outline-none;
+    @apply text-zinc-400 font-medium text-lg focus:outline-none;
   }
 
   .nav-btn:hover {
