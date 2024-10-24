@@ -59,7 +59,7 @@
     @apply text-zinc-400 text-xs uppercase;
   }
 
-  .contact-details a,p {
+  .contact-details a{
     @apply text-white text-xs no-underline hover:underline;
   }
 
@@ -76,13 +76,16 @@
     @apply flex space-x-8 bg-zinc-700 p-6 mt-0 rounded-tr-3xl rounded-bl-3xl;
   }
   .nav-btn-active {
-    @apply text-yellow-400 font-bold text-lg hover:text-yellow-400 focus:outline-none;
+    @apply text-yellow-500 font-bold text-lg hover:text-yellow-500 focus:outline-none;
   }
   .nav-btn {
     @apply text-zinc-400 font-semibold text-lg focus:outline-none;
   }
 
   .nav-btn:hover {
-    @apply text-yellow-400;
+    @apply text-yellow-500;
+  }
+  .divider-content {
+    @apply w-1/12 border-t-4 border-yellow-500  px-8 mx-8;
   }
 }

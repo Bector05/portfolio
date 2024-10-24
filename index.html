@@ -56,7 +56,7 @@
             </div>
             <div class="contact-details">
               <span class="label">Birth Date</span>
-              <p>5 December, 1999</p>
+              <a>5 December, 1999</a>
             </div>
           </div>
           <div class="contact-item">
@@ -65,7 +65,7 @@
             </div>
             <div class="contact-details">
               <span class="label">Location</span>
-              <p>Vancouver, BC</p>
+              <a>Vancouver, BC</a>
             </div>
           </div>
         </div>
@@ -74,12 +74,49 @@
         <div class="content">
           <h1 class="content-h1">About Me</h1>
           <nav class="content-nav">
-            <button class="nav-btn-active">About</button>
-            <button class="nav-btn">Resume</button>
-            <button class="nav-btn">Projects</button>
-            <button class="nav-btn">Interests</button>
-            <button class="nav-btn">Contact</button>
+            <button class="nav-btn-active" data-target="about">About</button>
+            <button class="nav-btn" data-target="resume">Resume</button>
+            <button class="nav-btn" data-target="projects">Projects</button>
+            <button class="nav-btn" data-target="interests">Interests</button>
+            <button class="nav-btn" data-target="contact">Contact</button>
           </nav>
+        </div>
+        <hr class="divider-content" />
+
+        <div id="about" class="page-content p-8 space-y-4 text-white">
+          <p>
+            Hi, I’m Tushar! I’m passionate about data analysis and software
+            development. Currently, I’m pursuing a Bachelor of Science in
+            Computing Science at Simon Fraser University and have a diploma in
+            Computer Information Systems. My journey in tech has been about
+            turning complex data into actionable insights and building software
+            solutions that make a difference.
+          </p>
+          <p>
+            I’ve worked as a Data Analyst and Software Engineer, automating data
+            processes, building predictive models, and creating web applications
+            using Python, SQL, React, and more. Whether it's streamlining
+            recruitment processes or developing interactive dashboards, I enjoy
+            finding solutions that make data more accessible and impactful.
+          </p>
+          <p>
+            Beyond work, I love exploring new technologies, spending time
+            outdoors in Vancouver, and brainstorming new ideas. I’m always open
+            to connecting with others—feel free to reach out if you want to
+            collaborate or just chat about all things tech!
+          </p>
+        </div>
+        <div id="resume" class="page-content hidden p-8 space-y-4">
+          <p>Resume Content goes here...</p>
+        </div>
+        <div id="projects" class="page-content hidden p-8 space-y-4">
+          <p>Projects Content goes here...</p>
+        </div>
+        <div id="interests" class="page-content hidden p-8 space-y-4">
+          <p>Interests Content goes here...</p>
+        </div>
+        <div id="contact" class="page-content hidden p-8 space-y-4">
+          <p>Contact Content goes here...</p>
         </div>
       </div>
     </div>

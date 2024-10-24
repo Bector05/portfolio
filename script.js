@@ -1,11 +1,18 @@
 document.querySelectorAll('nav button').forEach((btn) => {
-btn.addEventListener('click', function () {
-    document.querySelectorAll('nav button').forEach((btn) => {
-    btn.classList.remove('text-yellow-400', 'font-bold');
-    btn.classList.add('text-zinc-400', 'font-semibold');
+  btn.addEventListener('click', function () {
+    document.querySelectorAll('nav button').forEach((button) => {
+      button.classList.remove('nav-btn-active');
+      button.classList.add('nav-btn');
     });
-    this.classList.remove('text-zinc-400', 'font-semibold');
-    this.classList.add('text-yellow-400', 'font-bold');
-});
-});
 
+    this.classList.add('nav-btn-active');
+    this.classList.remove('nav-btn');
+
+    document.querySelectorAll('.page-content').forEach((section) => {
+      section.classList.add('hidden');
+    });
+
+    const target = this.getAttribute('data-target');
+    document.getElementById(target).classList.remove('hidden');
+  });
+});
