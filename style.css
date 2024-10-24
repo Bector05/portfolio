@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .body-bg {
+    @apply bg-zinc-950;
+  }
+
+  .main-container {
+    @apply flex flex-row my-14 mx-24 gap-6;
+  }
+
+  .sidebar {
+    @apply flex flex-col w-1/5 h-screen bg-zinc-800 rounded-2xl items-center pt-14;
+  }
+
+  .avatar-wrapper {
+    @apply flex w-36 h-36 bg-zinc-700 rounded-2xl overflow-hidden;
+  }
+
+  .avatar {
+    @apply rounded-2xl;
+  }
+
+  .name h1 {
+    @apply text-white text-2xl mt-10;
+  }
+
+  .role {
+    @apply text-white text-sm my-4 bg-zinc-700 px-3 py-1 rounded-2xl;
+  }
+
+  .divider {
+    @apply w-full border-t-2 border-zinc-700 mt-4 px-8;
+  }
+
+  .contact-info {
+    @apply flex flex-col space-y-4 mt-6 w-full px-8;
+  }
+
+  .contact-item {
+    @apply flex items-center space-x-4;
+  }
+
+  .icon-wrapper {
+    @apply flex justify-center items-center w-10 h-10 bg-zinc-700 rounded-lg;
+  }
+
+  .icon-wrapper ion-icon {
+    @apply text-zinc-400 text-2xl;
+  }
+
+  .contact-details {
+    @apply flex flex-col;
+  }
+
+  .label {
+    @apply text-zinc-400 text-xs uppercase;
+  }
+
+  .contact-details a {
+    @apply text-white text-xs no-underline hover:underline;
+  }
+
+  .content {
+    @apply flex flex-col w-4/5 h-screen bg-zinc-800 rounded-2xl;
+  }
+}
